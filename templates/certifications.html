@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% block title %}Certifications - Nailah Septiani Putri{% endblock %}
+
+{% block content %}
+<section class="hero" style="padding: 120px 10%; text-align: center; background: linear-gradient(135deg, #ffffe0 0%, #fffacd 100%); color: #333; position: relative; overflow: hidden;">
+  <!-- Animated background elements -->
+  <div class="bg-shape" style="position: absolute; width: 300px; height: 300px; background: #ffd700; border-radius: 50%; filter: blur(60px); top: -100px; right: -100px; opacity: 0.3; animation: float 8s ease-in-out infinite;"></div>
+  <div class="bg-shape" style="position: absolute; width: 400px; height: 400px; background: #ff4ba0; border-radius: 50%; filter: blur(60px); bottom: -150px; left: -150px; opacity: 0.2; animation: float 10s ease-in-out infinite 2s;"></div>
+  
+  <div style="position: relative; z-index: 2;">
+    <h1 style="font-size: 3.5rem; margin-bottom: 20px; animation: fadeIn 1s ease-in-out; font-family: 'Poppins', sans-serif; font-weight: 800; line-height: 1.2;">
+      <span style="color: #333;">My</span> 
+      <span class="name-highlight" style="color: #ffd700; position: relative; display: inline-block;">
+        <span class="hover-effect" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 10px; background: #ffe46b; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+        Certifications
+      </span>
+    </h1>
+    <p class="subtitle" style="font-size: 1.3rem; max-width: 700px; margin: 0 auto 40px; animation: fadeIn 1.2s ease-in-out;">
+      Professional certifications and courses that validate my technical expertise
+    </p>
+  </div>
+</section>
+
+<section class="certifications" style="padding: 80px 10%; background: linear-gradient(135deg, #fffacd 0%, #ffffcc 100%); position: relative; overflow: hidden;">
+  <!-- Animated background elements -->
+  <div class="bg-shape" style="position: absolute; width: 200px; height: 200px; background: #ffd700; border-radius: 50%; filter: blur(40px); top: 50px; left: 10%; opacity: 0.3; animation: float 6s ease-in-out infinite;"></div>
+  <div class="bg-shape" style="position: absolute; width: 150px; height: 150px; background: #ff4ba0; border-radius: 50%; filter: blur(30px); bottom: 30px; right: 15%; opacity: 0.2; animation: float 7s ease-in-out infinite 1s;"></div>
+
+  <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto;">
+    <div class="cert-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
+      <!-- Cert 1 -->
+      <div class="cert-card" data-aos="zoom-in" style="background: #ffffcc; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s ease; position: relative;">
+        <div class="cert-badge" style="position: absolute; top: 20px; right: 20px; background: #ffd700; color: #333; padding: 5px 15px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; z-index: 2;">
+          Cybersecurity
+        </div>
+        <div class="cert-img-container" style="height: 200px; overflow: hidden;">
+          <img src="/static/img/cert1.jpg" alt="Intro to Ethical Hacking" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+        </div>
+        <div class="cert-content" style="padding: 25px;">
+          <h3 style="margin: 0 0 10px 0; color: #ffd700; font-size: 1.5rem;">Intro to Ethical Hacking</h3>
+          <p style="margin: 0 0 15px 0; font-weight: 600; color: #333;">Dicoding, 2024</p>
+          <div class="cert-tags" style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="background: rgba(255, 215, 0, 0.2); color: #ffd700; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Penetration Testing</span>
+            <span style="background: rgba(255, 75, 160, 0.2); color: #ff4ba0; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Security</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cert 2 -->
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="100" style="background: #ffffcc; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s ease; position: relative;">
+        <div class="cert-badge" style="position: absolute; top: 20px; right: 20px; background: #ff4ba0; color: white; padding: 5px 15px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; z-index: 2;">
+          Forensics
+        </div>
+        <div class="cert-img-container" style="height: 200px; overflow: hidden;">
+          <img src="/static/img/cert2.jpg" alt="Digital Forensics Basics" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+        </div>
+        <div class="cert-content" style="padding: 25px;">
+          <h3 style="margin: 0 0 10px 0; color: #ff4ba0; font-size: 1.5rem;">Digital Forensics Basics</h3>
+          <p style="margin: 0 0 15px 0; font-weight: 600; color: #333;">Cyber Academy, 2024</p>
+          <div class="cert-tags" style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="background: rgba(255, 75, 160, 0.2); color: #ff4ba0; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Investigation</span>
+            <span style="background: rgba(100, 200, 255, 0.2); color: #4da6ff; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cert 3 -->
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="200" style="background: #ffffcc; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s ease; position: relative;">
+        <div class="cert-badge" style="position: absolute; top: 20px; right: 20px; background: #4da6ff; color: white; padding: 5px 15px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; z-index: 2;">
+          Web Security
+        </div>
+        <div class="cert-img-container" style="height: 200px; overflow: hidden;">
+          <img src="/static/img/cert3.jpg" alt="Web Penetration Testing" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+        </div>
+        <div class="cert-content" style="padding: 25px;">
+          <h3 style="margin: 0 0 10px 0; color: #4da6ff; font-size: 1.5rem;">Web Penetration Testing</h3>
+          <p style="margin: 0 0 15px 0; font-weight: 600; color: #333;">TryHackMe, 2024</p>
+          <div class="cert-tags" style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="background: rgba(100, 200, 255, 0.2); color: #4da6ff; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Web Security</span>
+            <span style="background: rgba(255, 215, 0, 0.2); color: #ffd700; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">OWASP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cert 4 -->
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="300" style="background: #ffffcc; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.4s ease; position: relative;">
+        <div class="cert-badge" style="position: absolute; top: 20px; right: 20px; background: #4caf50; color: white; padding: 5px 15px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; z-index: 2;">
+          Programming
+        </div>
+        <div class="cert-img-container" style="height: 200px; overflow: hidden;">
+          <img src="/static/img/cert4.jpg" alt="Secure Coding in Python" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+        </div>
+        <div class="cert-content" style="padding: 25px;">
+          <h3 style="margin: 0 0 10px 0; color: #4caf50; font-size: 1.5rem;">Secure Coding in Python</h3>
+          <p style="margin: 0 0 15px 0; font-weight: 600; color: #333;">Progate, 2024</p>
+          <div class="cert-tags" style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="background: rgba(76, 175, 80, 0.2); color: #4caf50; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Python</span>
+            <span style="background: rgba(255, 215, 0, 0.2); color: #ffd700; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Security</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #ffffe0 0%, #fffacd 100%) !important;
+  }
+  
+  .certifications {
+    background: linear-gradient(135deg, #fffacd 0%, #ffffcc 100%) !important;
+  }
+  
+  .cert-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
+  }
+  
+  .cert-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .cert-grid {
+      grid-template-columns: 1fr !important;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem !important;
+    }
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add hover effect to certification cards
+  document.querySelectorAll('.cert-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-10px)';
+      this.style.boxShadow = '0 20px 50px rgba(0,0,0,0.15)';
+    });
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+      this.style.boxShadow = '0 15px 40px rgba(0,0,0,0.1)';
+    });
+  });
+  
+  // Add animation to name highlight
+  const nameHighlight = document.querySelector('.name-highlight');
+  if (nameHighlight) {
+    nameHighlight.addEventListener('mouseenter', function() {
+      this.querySelector('.hover-effect').style.transform = 'scaleX(1)';
+    });
+    nameHighlight.addEventListener('mouseleave', function() {
+      this.querySelector('.hover-effect').style.transform = 'scaleX(0)';
+    });
+  }
+});
+</script>
+{% endblock %}

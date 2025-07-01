@@ -1,0 +1,293 @@
+{% extends 'base.html' %}
+
+{% block title %}Organizations - Nailah Septiani Putri{% endblock %}
+
+{% block content %}
+<section class="hero" style="padding: 120px 10%; text-align: center; background: linear-gradient(135deg, #ffffe0 0%, #fffacd 100%); color: #333; position: relative; overflow: hidden;">
+  <!-- Animated background elements -->
+  <div class="bg-shape" style="position: absolute; width: 300px; height: 300px; background: #ffd700; border-radius: 50%; filter: blur(60px); top: -100px; right: -100px; opacity: 0.3; animation: float 8s ease-in-out infinite;"></div>
+  <div class="bg-shape" style="position: absolute; width: 400px; height: 400px; background: #ff4ba0; border-radius: 50%; filter: blur(60px); bottom: -150px; left: -150px; opacity: 0.2; animation: float 10s ease-in-out infinite 2s;"></div>
+  
+  <div style="position: relative; z-index: 2;">
+    <h1 style="font-size: 3.5rem; margin-bottom: 20px; animation: fadeIn 1s ease-in-out; font-family: 'Poppins', sans-serif; font-weight: 800; line-height: 1.2;">
+      <span style="color: #333;">My</span> 
+      <span class="name-highlight" style="color: #ffd700; position: relative; display: inline-block;">
+        <span class="hover-effect" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 10px; background: #ffe46b; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+        Organizations
+      </span>
+    </h1>
+    <p class="subtitle" style="font-size: 1.3rem; max-width: 700px; margin: 0 auto 40px; animation: fadeIn 1.2s ease-in-out;">
+      Leadership experiences and organizational roles that shaped my professional journey
+    </p>
+  </div>
+</section>
+
+<section class="organizations" style="padding: 80px 10%; background: linear-gradient(135deg, #fffacd 0%, #ffffcc 100%); position: relative; overflow: hidden;">
+  <!-- Animated background elements -->
+  <div class="bg-shape" style="position: absolute; width: 200px; height: 200px; background: #ffd700; border-radius: 50%; filter: blur(40px); top: 50px; left: 10%; opacity: 0.3; animation: float 6s ease-in-out infinite;"></div>
+  <div class="bg-shape" style="position: absolute; width: 150px; height: 150px; background: #ff4ba0; border-radius: 50%; filter: blur(30px); bottom: 30px; right: 15%; opacity: 0.2; animation: float 7s ease-in-out infinite 1s;"></div>
+
+  <div style="position: relative; z-index: 2; max-width: 1000px; margin: 0 auto;">
+    <div class="organization-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
+      <!-- Card 1 - Updated Vice President Card -->
+      <div class="org-card" data-aos="fade-up" style="background: #ffffcc; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.4s ease;">
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <div style="width: 60px; height: 60px; background: #fffacd; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; border: 2px solid #ffd700;">
+            <span style="font-size: 1.5rem; color: #ffd700;">👑</span>
+          </div>
+          <div>
+            <h3 style="margin: 0; color: #ffd700; font-size: 1.5rem;">Vice President</h3>
+            <p style="margin: 5px 0 0; font-weight: 600; color: #333;">Mahasiswa Penggerak</p>
+          </div>
+        </div>
+        <div style="background: #fffacd; padding: 15px; border-radius: 15px; margin-bottom: 20px; border: 2px solid #ffd700;">
+          <p style="margin: 0; font-weight: 700; color: #333;">2024 – Present</p>
+        </div>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #333;">
+          <li>Supervised multiple MBKM-related programs and team structure</li>
+          <li>Organized self-growth webinars on internships and career path planning</li>
+          <li>Managed departments & ensured all campaigns delivered effectively</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="org-card" data-aos="fade-up" style="background: #ffffcc; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.4s ease;">
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <div style="width: 60px; height: 60px; background: #fff0f5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; border: 2px solid #ff4ba0;">
+            <span style="font-size: 1.5rem; color: #ff4ba0;">📢</span>
+          </div>
+          <div>
+            <h3 style="margin: 0; color: #ff4ba0; font-size: 1.5rem;">Head of Communication</h3>
+            <p style="margin: 5px 0 0; font-weight: 600; color: #333;">BEM FOCS</p>
+          </div>
+        </div>
+        <div style="background: #fff0f5; padding: 15px; border-radius: 15px; margin-bottom: 20px; border: 2px solid #ff4ba0;">
+          <p style="margin: 0; font-weight: 700; color: #333;">Oct 2024 – Present</p>
+        </div>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #333;">
+          <li>Led PR team, social media, podcast and content planning</li>
+          <li>Boosted Instagram engagement to 68.5k views</li>
+          <li>Hosted and moderated faculty events and campaigns</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="org-card" data-aos="fade-up" style="background: #ffffcc; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.4s ease;">
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <div style="width: 60px; height: 60px; background: #e6f7ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; border: 2px solid #4da6ff;">
+            <span style="font-size: 1.5rem; color: #4da6ff;">🤝</span>
+          </div>
+          <div>
+            <h3 style="margin: 0; color: #4da6ff; font-size: 1.5rem;">Head of PR</h3>
+            <p style="margin: 5px 0 0; font-weight: 600; color: #333;">President Univ Developer Club</p>
+          </div>
+        </div>
+        <div style="background: #e6f7ff; padding: 15px; border-radius: 15px; margin-bottom: 20px; border: 2px solid #4da6ff;">
+          <p style="margin: 0; font-weight: 700; color: #333;">Sep 2024 – Now</p>
+        </div>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #333;">
+          <li>Managed Discord, LinkedIn, WhatsApp, and Instagram community</li>
+          <li>Designed content calendar, copywriting & visual delivery</li>
+          <li>Engaged with external partners and MC on events</li>
+        </ul>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="org-card" data-aos="fade-up" style="background: #ffffcc; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.4s ease;">
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <div style="width: 60px; height: 60px; background: #f0fff4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; border: 2px solid #4caf50;">
+            <span style="font-size: 1.5rem; color: #4caf50;">📝</span>
+          </div>
+          <div>
+            <h3 style="margin: 0; color: #4caf50; font-size: 1.5rem;">Secretary</h3>
+            <p style="margin: 5px 0 0; font-weight: 600; color: #333;">MC-MBKM President University</p>
+          </div>
+        </div>
+        <div style="background: #f0fff4; padding: 15px; border-radius: 15px; margin-bottom: 20px; border: 2px solid #4caf50;">
+          <p style="margin: 0; font-weight: 700; color: #333;">Aug 2023 – Aug 2024</p>
+        </div>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #333;">
+          <li>Created proposals, MoUs, TORs, and official letters</li>
+          <li>Handled documentation & correspondence for MBKM events</li>
+        </ul>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="org-card" data-aos="fade-up" style="background: #ffffcc; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.4s ease;">
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <div style="width: 60px; height: 60px; background: #fff9e6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; border: 2px solid #ff9800;">
+            <span style="font-size: 1.5rem; color: #ff9800;">📱</span>
+          </div>
+          <div>
+            <h3 style="margin: 0; color: #ff9800; font-size: 1.5rem;">Member of Communication</h3>
+            <p style="margin: 5px 0 0; font-weight: 600; color: #333;">BEM Faculty of Computing</p>
+          </div>
+        </div>
+        <div style="background: #fff9e6; padding: 15px; border-radius: 15px; margin-bottom: 20px; border: 2px solid #ff9800;">
+          <p style="margin: 0; font-weight: 700; color: #333;">Aug 2023 – Oct 2024</p>
+        </div>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #333;">
+          <li>Created & managed social media content for all channels</li>
+          <li>Content writer & designer, consistent post timeline</li>
+          <li>Regular MC for BEM & FOCS events</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Light Mode (default) */
+  :root {
+    --hero-bg-start: #ffffe0;
+    --hero-bg-end: #fffacd;
+    --org-bg-start: #fffacd;
+    --org-bg-end: #ffffcc;
+    --card-bg: #ffffcc;
+    --text-color: #333;
+    --light-text: #f8f8f8;
+    --shadow-color: rgba(0,0,0,0.05);
+    --gold-accent: #ffd700;
+    --pink-accent: #ff4ba0;
+    --blue-accent: #4da6ff;
+    --green-accent: #4caf50;
+    --orange-accent: #ff9800;
+  }
+
+  /* Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --hero-bg-start: #1a0a1a;
+      --hero-bg-end: #2a0a1a;
+      --org-bg-start: #121212;
+      --org-bg-end: #1a1a1a;
+      --card-bg: #1e1e1e;
+      --text-color: #f0f0f0;
+      --light-text: #f8f8f8;
+      --shadow-color: rgba(0,0,0,0.3);
+      --gold-accent: #ffd700;
+      --pink-accent: #ff79b0;
+      --blue-accent: #6d8eff;
+      --green-accent: #4caf50;
+      --orange-accent: #ff9e4f;
+    }
+
+    /* Background shapes */
+    .bg-shape {
+      opacity: 0.2 !important;
+    }
+
+    /* Text colors */
+    body, .hero, .organizations,
+    .org-card, .org-card p, .org-card li,
+    .org-card h3, .org-card div[style*="font-weight: 600"] {
+      color: var(--text-color) !important;
+    }
+
+    /* Card backgrounds */
+    .org-card {
+      background: var(--card-bg) !important;
+    }
+
+    /* Date badge backgrounds */
+    .org-card div[style*="background: #fffacd"] {
+      background: rgba(30,30,30,0.8) !important;
+      border-color: var(--gold-accent) !important;
+    }
+    .org-card div[style*="background: #fff0f5"] {
+      background: rgba(30,30,30,0.8) !important;
+      border-color: var(--pink-accent) !important;
+    }
+    .org-card div[style*="background: #e6f7ff"] {
+      background: rgba(30,30,30,0.8) !important;
+      border-color: var(--blue-accent) !important;
+    }
+    .org-card div[style*="background: #f0fff4"] {
+      background: rgba(30,30,30,0.8) !important;
+      border-color: var(--green-accent) !important;
+    }
+    .org-card div[style*="background: #fff9e6"] {
+      background: rgba(30,30,30,0.8) !important;
+      border-color: var(--orange-accent) !important;
+    }
+
+    /* Icon circles */
+    .org-card div[style*="background: #fffacd"] {
+      background: rgba(30,30,30,0.8) !important;
+    }
+    .org-card div[style*="background: #fff0f5"] {
+      background: rgba(30,30,30,0.8) !important;
+    }
+    .org-card div[style*="background: #e6f7ff"] {
+      background: rgba(30,30,30,0.8) !important;
+    }
+    .org-card div[style*="background: #f0fff4"] {
+      background: rgba(30,30,30,0.8) !important;
+    }
+    .org-card div[style*="background: #fff9e6"] {
+      background: rgba(30,30,30,0.8) !important;
+    }
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--hero-bg-start) 0%, var(--hero-bg-end) 100%) !important;
+  }
+  
+  .organizations {
+    background: linear-gradient(135deg, var(--org-bg-start) 0%, var(--org-bg-end) 100%) !important;
+  }
+  
+  .org-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 40px var(--shadow-color) !important;
+  }
+  
+  @media (max-width: 768px) {
+    .organization-cards {
+      grid-template-columns: 1fr !important;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  /* Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add hover effect to organization cards
+  document.querySelectorAll('.org-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-10px)';
+      this.style.boxShadow = '0 15px 40px rgba(0,0,0,0.1)';
+    });
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+      this.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
+    });
+  });
+  
+  // Add animation to name highlight
+  const nameHighlight = document.querySelector('.name-highlight');
+  if (nameHighlight) {
+    nameHighlight.addEventListener('mouseenter', function() {
+      this.querySelector('.hover-effect').style.transform = 'scaleX(1)';
+    });
+    nameHighlight.addEventListener('mouseleave', function() {
+      this.querySelector('.hover-effect').style.transform = 'scaleX(0)';
+    });
+  }
+});
+</script>
+{% endblock %}

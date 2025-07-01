@@ -1,0 +1,230 @@
+/* General */
+body {
+  background-color: #0e0e0e;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header / Navbar */
+header {
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ff542f;
+}
+
+header nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a.active {
+  color: #ff542f;
+  font-weight: bold;
+}
+
+header button {
+  background-color: #ff542f;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.hero p {
+  color: gray;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+}
+
+.about-section .profile-img img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.about-section .content span {
+  background-color: #1f1f1f;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.about-section .content h2 {
+  margin: 20px 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.about-section .content p {
+  color: #aaa;
+}
+
+.about-section .content .buttons {
+  margin-top: 20px;
+}
+
+.about-section .content .buttons button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.about-section .content .buttons .primary {
+  background-color: #ff542f;
+  color: white;
+  border: none;
+}
+
+.about-section .content .buttons .secondary {
+  background-color: transparent;
+  border: 2px solid #ff542f;
+  color: #ff542f;
+}
+
+/* Skills Section */
+.skills {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills h2 span {
+  color: #ff542f;
+}
+
+.skills p {
+  color: #aaa;
+}
+
+.skills .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skills .grid div {
+  text-align: center;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.services h2 span {
+  color: #ff542f;
+}
+
+.services p {
+  color: #aaa;
+}
+
+.services .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.services .cards .card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.services .cards .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.services .see-all {
+  margin-top: 30px;
+}
+
+.services .see-all button {
+  background-color: #ff542f;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 10%;
+  background-color: #161616;
+  text-align: center;
+}
+
+.testimonials h2 span {
+  color: #ff542f;
+}
+
+.testimonials p {
+  color: #aaa;
+}
+
+.testimonials .reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.testimonials .reviews .review {
+  width: 30%;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #0a0a0a;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 14px;
+}
+
+footer h3 {
+  color: #ff542f;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}

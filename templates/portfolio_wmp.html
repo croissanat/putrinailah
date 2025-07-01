@@ -1,0 +1,400 @@
+{% extends 'base.html' %}
+
+{% block title %}Enrollment App - WMP Final Exam - Nailah Septiani Putri{% endblock %}
+
+{% block content %}
+<section class="project-hero" style="padding: 120px 5%; text-align: center; background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%); color: #ffffff; position: relative; overflow: hidden;">
+  <!-- Animated background elements -->
+  <div class="bg-shape" style="position: absolute; width: 300px; height: 300px; background: #00b894; border-radius: 50%; filter: blur(60px); top: -100px; right: -100px; opacity: 0.2; animation: float 8s ease-in-out infinite;"></div>
+  <div class="bg-shape" style="position: absolute; width: 400px; height: 400px; background: #0984e3; border-radius: 50%; filter: blur(60px); bottom: -150px; left: -150px; opacity: 0.15; animation: float 10s ease-in-out infinite 2s;"></div>
+  
+  <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto;">
+    <h1 style="font-size: 3rem; margin-bottom: 15px; animation: fadeIn 1s ease-in-out; font-family: 'Poppins', sans-serif; font-weight: 800; line-height: 1.2;">
+      <span style="color: #ffffff;">Student Enrollment</span> 
+      <span class="name-highlight" style="color: #00b894; position: relative; display: inline-block;">
+        <span class="hover-effect" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 10px; background: #6c5ce7; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+        Mobile Application
+      </span>
+    </h1>
+    <div style="display: inline-flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 30px;">
+      <div style="background: rgba(40, 40, 40, 0.8); padding: 8px 20px; border-radius: 30px; color: #ffffff;" data-aos="fade-up">
+        <i class="fas fa-calendar-alt" style="margin-right: 8px;"></i> Year: <strong>2024</strong>
+      </div>
+      <div style="background: rgba(40, 40, 40, 0.8); padding: 8px 20px; border-radius: 30px; color: #ffffff;" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-mobile-alt" style="margin-right: 8px;"></i> Platform: <strong>Android</strong>
+      </div>
+      <div style="background: rgba(40, 40, 40, 0.8); padding: 8px 20px; border-radius: 30px; color: #ffffff;" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-database" style="margin-right: 8px;"></i> Database: <strong>Firebase</strong>
+      </div>
+    </div>
+    
+    <div class="project-image-container" style="margin: 40px 0; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3); position: relative;" data-aos="zoom-in">
+      <img src="/static/img/loginwmp.png" alt="Enrollment App Screens" style="width: 100%; transition: transform 0.5s ease; display: block;">
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); padding: 30px 20px; text-align: left; color: white;">
+        <h3 style="margin: 0; font-size: 1.5rem;">Wireless & Mobile Programming Final Exam</h3>
+        <p style="margin: 5px 0 0; opacity: 0.9;">Student enrollment application with authentication and credit limit system</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-details" style="padding: 80px 5%; background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%); position: relative; overflow: hidden;">
+  <div style="max-width: 1000px; margin: 0 auto; position: relative; z-index: 2;">
+    <div class="detail-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+      <div class="detail-card" style="background: rgba(40, 40, 40, 0.8); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" data-aos="fade-right">
+        <div style="width: 60px; height: 60px; background: #00b894; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: white; font-size: 1.5rem;">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <h3 style="color: #00b894; margin-bottom: 15px; font-family: 'Poppins', sans-serif; font-weight: 600;">Project Objective</h3>
+        <p style="line-height: 1.8; color: #f0f0f0;">
+          Developed a full-stack mobile application for student enrollment with authentication, course selection, and credit limit enforcement (max 24 credits). The app solves the problem of manual course enrollment in academic communities.
+        </p>
+      </div>
+
+      <div class="detail-card" style="background: rgba(40, 40, 40, 0.8); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" data-aos="fade-up">
+        <div style="width: 60px; height: 60px; background: #00b894; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: white; font-size: 1.5rem;">
+          <i class="fas fa-tasks"></i>
+        </div>
+        <h3 style="color: #00b894; margin-bottom: 15px; font-family: 'Poppins', sans-serif; font-weight: 600;">Key Features</h3>
+        <ul style="line-height: 1.8; padding-left: 20px; margin: 0; color: #f0f0f0;">
+          <li>Student registration and login</li>
+          <li>Course catalog browsing</li>
+          <li>Credit limit enforcement (24 max)</li>
+          <li>Enrollment summary view</li>
+          <li>Input validation and error handling</li>
+        </ul>
+      </div>
+
+      <div class="detail-card" style="background: rgba(40, 40, 40, 0.8); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" data-aos="fade-left">
+        <div style="width: 60px; height: 60px; background: #0984e3; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: white; font-size: 1.5rem;">
+          <i class="fas fa-chart-pie"></i>
+        </div>
+        <h3 style="color: #0984e3; margin-bottom: 15px; font-family: 'Poppins', sans-serif; font-weight: 600;">Technical Details</h3>
+        <p style="line-height: 1.8; color: #f0f0f0;">
+          Built with Android Studio using Java/Kotlin, connected to Firebase for authentication and data storage. Implemented responsive UI, data validation, and seamless navigation between enrollment screens.
+        </p>
+      </div>
+    </div>
+
+    <!-- App Screens Section -->
+    <div class="gallery-section" style="margin: 60px 0;">
+      <h2 style="font-size: 2rem; color: #00b894; margin-bottom: 30px; text-align: center; font-family: 'Poppins', sans-serif; font-weight: 700;" data-aos="fade-down">
+        Application Screens
+      </h2>
+      
+      <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="gallery-item" style="background: rgba(40, 40, 40, 0.8); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" data-aos="zoom-in">
+          <img src="/static/img/loginwmp.png" alt="Login Screen" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #00b894;">Login Screen</h3>
+            <p style="font-size: 0.9rem; color: #f0f0f0;">Secure authentication with email/password validation. Shows "Invalid credentials" message for failed attempts.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" style="background: rgba(40, 40, 40, 0.8); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" data-aos="zoom-in" data-aos-delay="100">
+          <img src="/static/img/registwmp.png" alt="Registration Screen" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #00b894;">Registration Screen</h3>
+            <p style="font-size: 0.9rem; color: #f0f0f0;">New users can create accounts with name, email, and password. Redirects to login after successful registration.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" style="background: rgba(40, 40, 40, 0.8); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" data-aos="zoom-in" data-aos-delay="200">
+          <img src="/static/img/homewmp.png" alt="Home Dashboard" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #0984e3;">Home Dashboard</h3>
+            <p style="font-size: 0.9rem; color: #f0f0f0;">Welcome screen with navigation to enrollment features and personalized greeting message.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: rgba(40, 40, 40, 0.8); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" data-aos="zoom-in" data-aos-delay="300">
+          <img src="/static/img/coursecatalogwmp.png" alt="Course Catalog" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #00b894;">Course Catalog</h3>
+            <p style="font-size: 0.9rem; color: #f0f0f0;">Browse available courses with credit information. Enforces 24-credit maximum limit with validation.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: rgba(40, 40, 40, 0.8); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" data-aos="zoom-in" data-aos-delay="400">
+          <img src="/static/img/enrollmentsummarywmp.png" alt="Enrollment Summary" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #00b894;">Enrollment Summary</h3>
+            <p style="font-size: 0.9rem; color: #f0f0f0;">Displays selected courses and total credits. Provides confirmation of successful enrollment.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project Links Section -->
+      <div style="background: rgba(40, 40, 40, 0.8); border-radius: 15px; padding: 30px; margin-top: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); text-align: center;" data-aos="fade-up">
+        <div style="width: 80px; height: 80px; background: #00b894; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; color: white; font-size: 2rem;">
+          <i class="fas fa-code-branch"></i>
+        </div>
+        <h3 style="margin-top: 0; color: #00b894;">Project Repository</h3>
+        <p style="margin-bottom: 25px; color: #f0f0f0;">Access the complete source code and documentation for this enrollment application.</p>
+        <a href="https://github.com/croissanat/WMPFinalExam.git" target="_blank" class="btn primary" style="display: inline-flex; align-items: center; background-color: #00b894; color: white;">
+          <i class="fab fa-github" style="margin-right: 8px;"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Development Process Section -->
+    <div class="process-section" style="margin-top: 80px;">
+      <h2 style="font-size: 2rem; color: #00b894; margin-bottom: 30px; text-align: center; font-family: 'Poppins', sans-serif; font-weight: 700;" data-aos="fade-down">
+        Development Process
+      </h2>
+      
+      <div class="process-timeline" style="position: relative; max-width: 800px; margin: 0 auto;">
+        <!-- Timeline line -->
+        <div style="position: absolute; left: 30px; top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, #00b894, #0984e3); border-radius: 2px; z-index: 1;"></div>
+        
+        <!-- Process steps -->
+        <div class="process-step" style="position: relative; padding-left: 80px; margin-bottom: 40px; z-index: 2;" data-aos="fade-right">
+          <div style="position: absolute; left: 20px; top: 0; width: 40px; height: 40px; background: #00b894; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 0 0 5px rgba(0,184,148,0.2);">1</div>
+          <div style="background: rgba(40, 40, 40, 0.8); padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+            <h3 style="margin-top: 0; color: #00b894;">Requirements Analysis</h3>
+            <p style="color: #f0f0f0;">Analyzed the exam requirements to identify core features: authentication, course selection, credit limit enforcement, and enrollment summary.</p>
+          </div>
+        </div>
+        
+        <div class="process-step" style="position: relative; padding-left: 80px; margin-bottom: 40px; z-index: 2;" data-aos="fade-right" data-aos-delay="100">
+          <div style="position: absolute; left: 20px; top: 0; width: 40px; height: 40px; background: #00b894; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 0 0 5px rgba(9,132,227,0.2);">2</div>
+          <div style="background: rgba(40, 40, 40, 0.8); padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+            <h3 style="margin-top: 0; color: #00b894;">UI/UX Design</h3>
+            <p style="color: #f0f0f0;">Designed intuitive user interfaces for all screens with consistent styling and clear navigation paths between enrollment steps.</p>
+          </div>
+        </div>
+        
+        <div class="process-step" style="position: relative; padding-left: 80px; margin-bottom: 40px; z-index: 2;" data-aos="fade-right" data-aos-delay="200">
+          <div style="position: absolute; left: 20px; top: 0; width: 40px; height: 40px; background: #0984e3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 0 0 5px rgba(108,92,231,0.2);">3</div>
+          <div style="background: rgba(40, 40, 40, 0.8); padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+            <h3 style="margin-top: 0; color: #0984e3;">Backend Integration</h3>
+            <p style="color: #f0f0f0;">Implemented Firebase authentication and database connectivity to securely store user accounts and enrollment data.</p>
+          </div>
+        </div>
+        
+        <div class="process-step" style="position: relative; padding-left: 80px; margin-bottom: 40px; z-index: 2;" data-aos="fade-right" data-aos-delay="300">
+          <div style="position: absolute; left: 20px; top: 0; width: 40px; height: 40px; background: #6c5ce7; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 0 0 5px rgba(225,112,85,0.2);">4</div>
+          <div style="background: rgba(40, 40, 40, 0.8); padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+            <h3 style="margin-top: 0; color: #6c5ce7;">Testing & Validation</h3>
+            <p style="color: #f0f0f0;">Conducted thorough testing of all features including edge cases like maximum credit limits and invalid login attempts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="project-cta" style="padding: 80px 5%; background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%); text-align: center; position: relative; overflow: hidden;">
+  <!-- Background shapes -->
+  <div class="cta-shape" style="position: absolute; width: 200px; height: 200px; background: #00b894; border-radius: 50%; filter: blur(60px); top: -50px; left: -50px; opacity: 0.1;"></div>
+  <div class="cta-shape" style="position: absolute; width: 300px; height: 300px; background: #0984e3; border-radius: 50%; filter: blur(80px); bottom: -100px; right: -100px; opacity: 0.1;"></div>
+  
+  <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
+    <h2 style="font-size: 2.5rem; color: #ffffff; margin-bottom: 20px; font-family: 'Poppins', sans-serif; font-weight: 700;" data-aos="fade-down">
+      Want to See More Mobile Projects?
+    </h2>
+    <p style="font-size: 1.1rem; margin-bottom: 40px; line-height: 1.6; color: #f0f0f0;" data-aos="fade-up">
+      Explore my portfolio of mobile development projects including detailed documentation and technical reports.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <a href="/portfolio" class="cta-button primary" data-aos="fade-right" data-aos-delay="100" style="background-color: #00b894; color: white;">
+        <span class="button-content">
+          <i class="fas fa-laptop-code button-icon"></i>
+          <span class="button-text">View Portfolio</span>
+          <span class="button-hover" style="background-color: #00a383;"></span>
+        </span>
+      </a>
+      <a href="https://docs.google.com/document/d/1q-0XjLUsMBku-EvmlJfuM7HGJuBzljX5H-jRpqd_ihQ/edit?usp=drivesdk" target="_blank" class="cta-button accent" data-aos="fade-up" data-aos-delay="100" style="background-color: #0984e3; color: white;">
+        <span class="button-content">
+          <i class="fas fa-file-alt button-icon"></i>
+          <span class="button-text">Full Project Report</span>
+          <span class="button-hover" style="background-color: #0873c2;"></span>
+        </span>
+      </a>
+      <a href="/contact" class="cta-button secondary" data-aos="fade-left" data-aos-delay="100" style="background-color: #ffd700; color: #121212;">
+        <span class="button-content">
+          <i class="fas fa-paper-plane button-icon"></i>
+          <span class="button-text">Discuss Project</span>
+          <span class="button-hover" style="background-color: #e6c200;"></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.project-image-container:hover img {
+  transform: scale(1.03);
+}
+
+.detail-card:hover, 
+.process-step:hover, 
+.gallery-item:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+}
+
+.process-step:hover {
+  transform: translateX(10px) !important;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn.primary {
+  background-color: #00b894;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,184,148,0.3);
+}
+
+.btn.primary:hover {
+  background-color: #00a383;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,184,148,0.4);
+}
+
+.btn.outline {
+  border: 2px solid #00b894;
+  color: white;
+  background: transparent;
+}
+
+.btn.outline:hover {
+  background-color: #00b894;
+  color: #121212;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,184,148,0.3);
+}
+
+/* CTA Button Styles */
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.button-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  z-index: 1;
+  border-radius: 50px;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .button-hover {
+  transform: scale(1);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .project-details {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .project-hero h1 {
+    font-size: 2.2rem !important;
+  }
+  
+  .cta-button, .btn {
+    min-width: 160px;
+    padding: 12px 20px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .project-links, .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add hover effects to project title
+  document.querySelector('.name-highlight').addEventListener('mouseenter', function() {
+    this.querySelector('.hover-effect').style.transform = 'scaleX(1)';
+  });
+  
+  // Add hover effects to all interactive elements
+  document.querySelectorAll('.detail-card, .process-step, .gallery-item').forEach(element => {
+    element.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-5px)';
+    });
+    element.addEventListener('mouseleave', function() {
+      this.style.transform = 'none';
+    });
+  });
+  
+  // Add hover effects to buttons
+  document.querySelectorAll('.btn, .cta-button').forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-3px)';
+    });
+    btn.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+    });
+  });
+});
+</script>
+{% endblock %}

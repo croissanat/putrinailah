@@ -1,0 +1,352 @@
+{% extends 'base.html' %}
+
+{% block title %}Security Risk Management Website - Nailah Septiani Putri{% endblock %}
+
+{% block content %}
+<section class="project-hero" style="padding: 100px 5%; background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%); color: #ffffff; position: relative; overflow: hidden;">
+  <!-- Animated background elements -->
+  <div class="bg-shape" style="position: absolute; width: 300px; height: 300px; background: #4da6ff; border-radius: 50%; filter: blur(60px); top: -100px; right: -100px; opacity: 0.2; animation: float 8s ease-in-out infinite;"></div>
+  <div class="bg-shape" style="position: absolute; width: 400px; height: 400px; background: #ff4ba0; border-radius: 50%; filter: blur(60px); bottom: -150px; left: -150px; opacity: 0.15; animation: float 10s ease-in-out infinite 2s;"></div>
+  
+  <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto;">
+    <h1 style="font-size: 3rem; margin-bottom: 20px; animation: fadeIn 1s ease-in-out; font-family: 'Poppins', sans-serif; font-weight: 800; line-height: 1.2;">
+      <span class="project-title" style="color: #ffffff; position: relative; display: inline-block;">
+        <span class="hover-effect" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 10px; background: #4da6ff; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+        Security Risk Management Website
+      </span>
+    </h1>
+    <div class="project-meta" style="display: flex; gap: 30px; margin-bottom: 40px; flex-wrap: wrap;">
+      <div style="background: rgba(40, 40, 40, 0.8); padding: 15px 25px; border-radius: 50px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+        <p style="margin: 0; font-weight: 600; color: #ffffff;">Year: <span style="color: #ff4ba0;">2025</span></p>
+      </div>
+      <div style="background: rgba(40, 40, 40, 0.8); padding: 15px 25px; border-radius: 50px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+        <p style="margin: 0; font-weight: 600; color: #ffffff;">Role: <span style="color: #ff4ba0;">Backend Developer</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-content" style="padding: 80px 5%; background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%); position: relative;">
+  <!-- Animated background elements -->
+  <div class="bg-shape" style="position: absolute; width: 200px; height: 200px; background: #4da6ff; border-radius: 50%; filter: blur(40px); top: 50px; left: 10%; opacity: 0.2; animation: float 6s ease-in-out infinite;"></div>
+  <div class="bg-shape" style="position: absolute; width: 150px; height: 150px; background: #ff4ba0; border-radius: 50%; filter: blur(30px); bottom: 30px; right: 15%; opacity: 0.15; animation: float 7s ease-in-out infinite 1s;"></div>
+  
+  <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto;">
+    <div class="project-showcase" style="margin-bottom: 60px;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <img src="/static/img/srm.png" alt="SRM Website Dashboard" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); transition: transform 0.3s ease;" class="project-image">
+        <p style="text-align: center; margin-top: 15px; font-weight: 500; color: #f0f0f0;">Security Risk Management Dashboard</p>
+      </div>
+    </div>
+
+    <div class="project-details" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+      <div data-aos="fade-up">
+        <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: #ffffff; position: relative; display: inline-block;">
+          <span class="hover-effect" style="position: absolute; bottom: 5px; left: 0; width: 100%; height: 8px; background: #4da6ff; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+          Tools & Skills
+        </h3>
+        <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px;">
+          <div style="background: rgba(40, 40, 40, 0.8); padding: 15px; border-radius: 12px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+            <p style="font-size: 2rem; margin: 0 0 10px 0; color: #ffffff;">🐍</p>
+            <p style="margin: 0; font-weight: 600; color: #ffffff;">Python</p>
+          </div>
+          <div style="background: rgba(40, 40, 40, 0.8); padding: 15px; border-radius: 12px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+            <p style="font-size: 2rem; margin: 0 0 10px 0; color: #ffffff;">🍶</p>
+            <p style="margin: 0; font-weight: 600; color: #ffffff;">Flask</p>
+          </div>
+          <div style="background: rgba(40, 40, 40, 0.8); padding: 15px; border-radius: 12px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+            <p style="font-size: 2rem; margin: 0 0 10px 0; color: #ffffff;">🗃️</p>
+            <p style="margin: 0; font-weight: 600; color: #ffffff;">MySQL</p>
+          </div>
+          <div style="background: rgba(40, 40, 40, 0.8); padding: 15px; border-radius: 12px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+            <p style="font-size: 2rem; margin: 0 0 10px 0; color: #ffffff;">🔌</p>
+            <p style="margin: 0; font-weight: 600; color: #ffffff;">API Integration</p>
+          </div>
+        </div>
+        
+        <!-- Added report link section -->
+        <div style="margin-top: 40px; background: rgba(40, 40, 40, 0.8); padding: 25px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+          <h4 style="font-size: 1.3rem; margin-bottom: 15px; color: #ffffff;">Project Documentation</h4>
+          <p style="margin-bottom: 15px; line-height: 1.6; color: #f0f0f0;">For detailed information about the project methodology, implementation, and results, check out the full project report:</p>
+          <a href="https://docs.google.com/document/d/1hslQGFk-aCaVeXhyB88l-VIfsVhwLHGE0StNQc35sgE/edit?usp=drivesdk" target="_blank" style="display: inline-block; background: #4da6ff; color: white; padding: 12px 25px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">
+            <i class="fas fa-file-alt" style="margin-right: 8px;"></i> View Full Report
+          </a>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: #ffffff; position: relative; display: inline-block;">
+          <span class="hover-effect" style="position: absolute; bottom: 5px; left: 0; width: 100%; height: 8px; background: #4da6ff; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+          Project Overview
+        </h3>
+        <p style="line-height: 1.8; margin-bottom: 20px; color: #f0f0f0;">
+          This project involved building a web-based Security Risk Management System using the OCTAVE Allegro framework to assess and mitigate threats on critical assets. Users can input URLs for malware scans via the VirusTotal API, assess system vulnerabilities using the CIA model, and generate risk mitigation strategies.
+        </p>
+        <p style="line-height: 1.8; margin-bottom: 20px; color: #f0f0f0;">
+          The system categorizes risks by likelihood and impact, provides asset profiles, and recommends actions such as MFA, IDS, and data encryption. Results are logged and visualized in a real-time dashboard. The site supports role-based access and aligns with frameworks such as ISO 27001 and NIST 800-53.
+        </p>
+        
+        <!-- Added technical details section -->
+        <div style="background: rgba(40, 40, 40, 0.8); padding: 25px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin-top: 30px;">
+          <h4 style="font-size: 1.3rem; margin-bottom: 15px; color: #ffffff;">Key Features</h4>
+          <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center;">
+              <span style="margin-right: 10px; color: #ff4ba0;">•</span>
+              <span style="color: #f0f0f0;">VirusTotal API integration for malware scanning</span>
+            </li>
+            <li style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center;">
+              <span style="margin-right: 10px; color: #ff4ba0;">•</span>
+              <span style="color: #f0f0f0;">CIA model for vulnerability assessment</span>
+            </li>
+            <li style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center;">
+              <span style="margin-right: 10px; color: #ff4ba0;">•</span>
+              <span style="color: #f0f0f0;">Real-time risk visualization dashboard</span>
+            </li>
+            <li style="padding: 10px 0; display: flex; align-items: center;">
+              <span style="margin-right: 10px; color: #ff4ba0;">•</span>
+              <span style="color: #f0f0f0;">Compliance with ISO 27001 & NIST 800-53</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-links" style="margin-top: 60px; text-align: center;" data-aos="fade-up">
+      <a href="https://github.com/szaaa6/ProjectSRM-N2S.git" target="_blank" class="btn primary" style="margin-right: 15px; background-color: #4da6ff; color: white;">
+        <i class="fab fa-github" style="margin-right: 8px;"></i> View on GitHub
+      </a>
+      <a href="/portfolio" class="btn outline" style="border-color: #4da6ff; color: #ffffff;">
+        <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Back to Portfolio
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="project-cta" style="padding: 80px 5%; background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%); text-align: center; position: relative; overflow: hidden;">
+  <!-- Background shapes -->
+  <div class="cta-shape" style="position: absolute; width: 200px; height: 200px; background: #4da6ff; border-radius: 50%; filter: blur(60px); top: -50px; left: -50px; opacity: 0.1;"></div>
+  <div class="cta-shape" style="position: absolute; width: 300px; height: 300px; background: #ff4ba0; border-radius: 50%; filter: blur(80px); bottom: -100px; right: -100px; opacity: 0.1;"></div>
+  
+  <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
+    <h2 style="font-size: 2.5rem; color: #ffffff; margin-bottom: 20px; font-family: 'Poppins', sans-serif; font-weight: 700;" data-aos="fade-down">
+      Want to Dive Deeper Into Security Research?
+    </h2>
+    <p style="font-size: 1.1rem; margin-bottom: 40px; line-height: 1.6; color: #f0f0f0;" data-aos="fade-up">
+      Explore more of my ethical hacking projects and vulnerability research, including detailed reports on security risk assessments like this SRM system.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <a href="/portfolio" class="cta-button primary" data-aos="fade-right" data-aos-delay="100" style="background-color: #4da6ff; color: white;">
+        <span class="button-content">
+          <i class="fas fa-laptop-code button-icon"></i>
+          <span class="button-text">View Portfolio</span>
+          <span class="button-hover" style="background-color: #3a8bd6;"></span>
+        </span>
+      </a>
+      <a href="https://docs.google.com/document/d/1hslQGFk-aCaVeXhyB88l-VIfsVhwLHGE0StNQc35sgE/edit?usp=drivesdk" target="_blank" class="cta-button accent" data-aos="fade-up" data-aos-delay="100" style="background-color: #ff4ba0; color: white;">
+        <span class="button-content">
+          <i class="fas fa-file-alt button-icon"></i>
+          <span class="button-text">View Full Report</span>
+          <span class="button-hover" style="background-color: #e03a8f;"></span>
+        </span>
+      </a>
+      <a href="/contact" class="cta-button secondary" data-aos="fade-left" data-aos-delay="100" style="background-color: #ffd700; color: #121212;">
+        <span class="button-content">
+          <i class="fas fa-paper-plane button-icon"></i>
+          <span class="button-text">Discuss Security</span>
+          <span class="button-hover" style="background-color: #e6c200;"></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+}
+.btn.primary {
+  background-color: #4da6ff;
+  color: white;
+  box-shadow: 0 5px 15px rgba(77, 166, 255, 0.3);
+}
+.btn.primary:hover {
+  background-color: #3a8bd6;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(77, 166, 255, 0.4);
+}
+.btn.outline {
+  border: 2px solid #4da6ff;
+  color: white;
+  background: transparent;
+}
+.btn.outline:hover {
+  background-color: #4da6ff;
+  color: #121212;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(77, 166, 255, 0.3);
+}
+
+.skills-grid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3) !important;
+}
+
+/* CTA Button Styles */
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.button-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  z-index: 1;
+  border-radius: 50px;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .button-hover {
+  transform: scale(1);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .project-details {
+    grid-template-columns: 1fr !important;
+  }
+  .project-hero h1 {
+    font-size: 2.2rem !important;
+  }
+  .project-cta h2 {
+    font-size: 2rem !important;
+  }
+  .cta-button {
+    min-width: 160px;
+    padding: 12px 20px;
+  }
+  .btn {
+    margin-bottom: 15px;
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add hover effect to project title
+  const projectTitle = document.querySelector('.project-title');
+  if (projectTitle) {
+    projectTitle.addEventListener('mouseenter', function() {
+      this.querySelector('.hover-effect').style.transform = 'scaleX(1)';
+    });
+    projectTitle.addEventListener('mouseleave', function() {
+      this.querySelector('.hover-effect').style.transform = 'scaleX(1)';
+    });
+  }
+
+  // Add hover effect to all hover-effect elements
+  document.querySelectorAll('.hover-effect').forEach(el => {
+    const parent = el.parentElement;
+    parent.addEventListener('mouseenter', function() {
+      el.style.transform = 'scaleX(1)';
+    });
+    parent.addEventListener('mouseleave', function() {
+      el.style.transform = 'scaleX(1)';
+    });
+  });
+
+  // Add hover effect to buttons
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-3px)';
+    });
+    btn.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+    });
+  });
+
+  // Add hover effect to skill cards
+  document.querySelectorAll('.skills-grid div').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-5px)';
+    });
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+    });
+  });
+  
+  // Add hover effect to CTA buttons
+  document.querySelectorAll('.cta-button').forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-3px)';
+    });
+    btn.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+    });
+  });
+});
+</script>
+{% endblock %}

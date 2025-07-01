@@ -1,0 +1,362 @@
+{% extends 'base.html' %}
+
+{% block title %}Forensics Project - Nailah Septiani Putri{% endblock %}
+
+{% block content %}
+<section class="project-hero" style="padding: 120px 5%; text-align: center; background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%); color: #ffffff; position: relative; overflow: hidden;">
+  <!-- Animated background elements -->
+  <div class="bg-shape" style="position: absolute; width: 300px; height: 300px; background: #ffd700; border-radius: 50%; filter: blur(60px); top: -100px; right: -100px; opacity: 0.1; animation: float 8s ease-in-out infinite;"></div>
+  <div class="bg-shape" style="position: absolute; width: 400px; height: 400px; background: #4da6ff; border-radius: 50%; filter: blur(60px); bottom: -150px; left: -150px; opacity: 0.1; animation: float 10s ease-in-out infinite 2s;"></div>
+  
+  <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto;">
+    <h1 style="font-size: 3rem; margin-bottom: 15px; animation: fadeIn 1s ease-in-out; font-family: 'Poppins', sans-serif; font-weight: 800; line-height: 1.2;">
+      <span style="color: #ffffff;">Digital</span> 
+      <span class="name-highlight" style="color: #4da6ff; position: relative; display: inline-block;">
+        <span class="hover-effect" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 10px; background: #ffe46b; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+        Forensics Investigation
+      </span>
+    </h1>
+    <p style="font-size: 1.2rem; margin-bottom: 30px; animation: fadeIn 1.2s ease-in-out; color: #f0f0f0;" data-aos="fade-up">
+      Year: <strong>2025</strong> &mdash; Role: <strong>Group Leader</strong> &mdash; Tools: <strong>Autopsy, FTK Imager, Hex Editor</strong>
+    </p>
+    
+    <div class="project-image-container" style="margin: 40px 0; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);" data-aos="zoom-in">
+      <img src="/static/img/forensicss.png" alt="Forensics Preview" style="width: 100%; transition: transform 0.5s ease; display: block; filter: brightness(0.9);">
+    </div>
+  </div>
+</section>
+
+<section class="project-details" style="padding: 80px 5%; background: #1a1a1a; position: relative; overflow: hidden;">
+  <div style="max-width: 1000px; margin: 0 auto; position: relative; z-index: 2;">
+    <div class="detail-card" style="background: #252525; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin-bottom: 40px;" data-aos="fade-up">
+      <h2 style="font-size: 2rem; color: #4da6ff; margin-bottom: 20px; font-family: 'Poppins', sans-serif; font-weight: 700;">
+        <span style="position: relative;">
+          <span class="hover-effect" style="position: absolute; bottom: 5px; left: 0; width: 100%; height: 8px; background: #ffe46b; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+          Project Overview
+        </span>
+      </h2>
+      <p style="line-height: 1.8; font-size: 1.1rem; color: #f0f0f0;">
+        In this project, our team was tasked with investigating a digital forensic scenario involving deleted and hidden files within a compromised system. Using various forensic techniques, we uncovered metadata, timeline events, and possible data exfiltration.
+      </p>
+    </div>
+
+    <div class="detail-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+      <div class="detail-card" style="background: #252525; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" data-aos="fade-right">
+        <h3 style="color: #4da6ff; margin-bottom: 15px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+          <i class="fas fa-tools" style="margin-right: 10px; color: #ff4ba0;"></i>Tools & Techniques
+        </h3>
+        <ul style="line-height: 1.8; padding-left: 20px; color: #f0f0f0;">
+          <li>Autopsy for comprehensive forensic analysis</li>
+          <li>FTK Imager for disk imaging</li>
+          <li>Hex Editor for binary analysis</li>
+          <li>Timeline reconstruction techniques</li>
+          <li>File carving and recovery methods</li>
+        </ul>
+      </div>
+
+      <div class="detail-card" style="background: #252525; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" data-aos="fade-up">
+        <h3 style="color: #4da6ff; margin-bottom: 15px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+          <i class="fas fa-tasks" style="margin-right: 10px; color: #ffd700;"></i>Key Findings
+        </h3>
+        <ul style="line-height: 1.8; padding-left: 20px; color: #f0f0f0;">
+          <li>Identified suspicious file deletion patterns</li>
+          <li>Recovered critical hidden documents</li>
+          <li>Traced unauthorized access timeline</li>
+          <li>Detected potential data exfiltration</li>
+          <li>Documented forensic evidence chain</li>
+        </ul>
+      </div>
+
+      <div class="detail-card" style="background: #252525; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" data-aos="fade-left">
+        <h3 style="color: #4da6ff; margin-bottom: 15px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+          <i class="fas fa-medal" style="margin-right: 10px; color: #4da6ff;"></i>Outcomes
+        </h3>
+        <ul style="line-height: 1.8; padding-left: 20px; color: #f0f0f0;">
+          <li>Comprehensive forensic report</li>
+          <li>Professional presentation to stakeholders</li>
+          <li>Security recommendations implementation</li>
+          <li>Improved evidence handling procedures</li>
+          <li>Team leadership experience</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="process-section" style="margin-top: 60px;">
+      <h2 style="font-size: 2rem; color: #4da6ff; margin-bottom: 30px; text-align: center; font-family: 'Poppins', sans-serif; font-weight: 700;" data-aos="fade-down">
+        Investigation Process
+      </h2>
+      
+      <div class="process-steps" style="position: relative;">
+        <!-- Timeline line -->
+        <div style="position: absolute; left: 30px; top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, #4da6ff, #ff4ba0); border-radius: 2px; z-index: 1;"></div>
+        
+        <!-- Process steps -->
+        <div class="process-step" style="position: relative; padding-left: 80px; margin-bottom: 40px; z-index: 2;" data-aos="fade-right">
+          <div style="position: absolute; left: 20px; top: 0; width: 40px; height: 40px; background: #4da6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 0 0 5px rgba(77, 166, 255, 0.2);">1</div>
+          <div style="background: #252525; padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+            <h3 style="margin-top: 0; color: #4da6ff;">Evidence Acquisition</h3>
+            <p style="color: #f0f0f0;">Created forensic images of the compromised systems using write-blocking techniques to preserve evidence integrity.</p>
+          </div>
+        </div>
+        
+        <div class="process-step" style="position: relative; padding-left: 80px; margin-bottom: 40px; z-index: 2;" data-aos="fade-right" data-aos-delay="100">
+          <div style="position: absolute; left: 20px; top: 0; width: 40px; height: 40px; background: #4da6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 0 0 5px rgba(77, 166, 255, 0.2);">2</div>
+          <div style="background: #252525; padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+            <h3 style="margin-top: 0; color: #4da6ff;">Timeline Analysis</h3>
+            <p style="color: #f0f0f0;">Reconstructed system events timeline to identify suspicious activities and potential intrusion vectors.</p>
+          </div>
+        </div>
+        
+        <div class="process-step" style="position: relative; padding-left: 80px; margin-bottom: 40px; z-index: 2;" data-aos="fade-right" data-aos-delay="200">
+          <div style="position: absolute; left: 20px; top: 0; width: 40px; height: 40px; background: #4da6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 0 0 5px rgba(77, 166, 255, 0.2);">3</div>
+          <div style="background: #252525; padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+            <h3 style="margin-top: 0; color: #4da6ff;">File Recovery</h3>
+            <p style="color: #f0f0f0;">Employed file carving techniques to recover deleted documents and analyze file metadata.</p>
+          </div>
+        </div>
+        
+        <div class="process-step" style="position: relative; padding-left: 80px; margin-bottom: 40px; z-index: 2;" data-aos="fade-right" data-aos-delay="300">
+          <div style="position: absolute; left: 20px; top: 0; width: 40px; height: 40px; background: #4da6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 0 0 5px rgba(77, 166, 255, 0.2);">4</div>
+          <div style="background: #252525; padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+            <h3 style="margin-top: 0; color: #4da6ff;">Reporting</h3>
+            <p style="color: #f0f0f0;">Compiled findings into a professional forensic report with detailed documentation of evidence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Section -->
+    <div class="detail-card" style="background: #252525; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin: 60px 0;" data-aos="fade-up">
+      <h2 style="font-size: 2rem; color: #4da6ff; margin-bottom: 20px; font-family: 'Poppins', sans-serif; font-weight: 700;">
+        <span style="position: relative;">
+          <span class="hover-effect" style="position: absolute; bottom: 5px; left: 0; width: 100%; height: 8px; background: #ffe46b; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
+          Full Investigation Report
+        </span>
+      </h2>
+      <p style="line-height: 1.8; font-size: 1.1rem; margin-bottom: 25px; color: #f0f0f0;">
+        For complete details of our forensic investigation methodology, findings, and conclusions, please view the full report document:
+      </p>
+      <a href="https://docs.google.com/document/d/11cdGgpN98iWiHf_4GdCSHYmee92g2E9Fg26iyjBeihY/edit?usp=drivesdk" target="_blank" style="display: inline-block; background-color: #4da6ff; color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(77, 166, 255, 0.3);">
+        <i class="fas fa-file-pdf" style="margin-right: 8px;"></i> View Full Report
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Dark Project Gallery Section -->
+<section class="project-gallery" style="padding: 80px 5%; background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%); text-align: center; position: relative; overflow: hidden;">
+  <div class="bg-shape" style="position: absolute; width: 200px; height: 200px; background: #ff4ba0; border-radius: 50%; filter: blur(60px); top: -50px; left: -50px; opacity: 0.1;"></div>
+  <div class="bg-shape" style="position: absolute; width: 300px; height: 300px; background: #4da6ff; border-radius: 50%; filter: blur(80px); bottom: -100px; right: -100px; opacity: 0.1;"></div>
+  
+  <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
+    <h2 style="font-size: 2rem; color: #ffffff; margin-bottom: 40px; font-family: 'Poppins', sans-serif; font-weight: 700;" data-aos="fade-down">
+      Forensic Evidence Gallery
+    </h2>
+    
+    <div class="gallery-item" style="overflow: hidden; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); transition: transform 0.3s ease; height: 400px; background: #252525; margin: 0 auto;" data-aos="zoom-in">
+      <img src="/static/img/forensics.png" alt="Forensic Analysis" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9);">
+    </div>
+    
+    <a href="/portfolio" class="btn outline" style="margin-top: 50px; display: inline-block; border: 2px solid #4da6ff; color: #4da6ff; background: transparent; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" data-aos="fade-up">
+      <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Back to Portfolio
+    </a>
+  </div>
+</section>
+
+<!-- Dark CTA Section -->
+<section class="project-cta" style="padding: 80px 5%; background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%); text-align: center; position: relative; overflow: hidden;">
+  <!-- Background shapes -->
+  <div class="cta-shape" style="position: absolute; width: 200px; height: 200px; background: #4da6ff; border-radius: 50%; filter: blur(60px); top: -50px; left: -50px; opacity: 0.1;"></div>
+  <div class="cta-shape" style="position: absolute; width: 300px; height: 300px; background: #ff4ba0; border-radius: 50%; filter: blur(80px); bottom: -100px; right: -100px; opacity: 0.1;"></div>
+  
+  <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
+    <h2 style="font-size: 2.5rem; color: #ffffff; margin-bottom: 20px; font-family: 'Poppins', sans-serif; font-weight: 700;" data-aos="fade-down">
+      Interested in Digital Forensics?
+    </h2>
+    <p style="font-size: 1.1rem; margin-bottom: 40px; line-height: 1.6; color: #f0f0f0;" data-aos="fade-up">
+      Explore more of my forensic investigations and security research projects.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <a href="/portfolio" class="cta-button primary" data-aos="fade-right" data-aos-delay="100" style="background-color: #4da6ff; color: white;">
+        <span class="button-content">
+          <i class="fas fa-laptop-code button-icon"></i>
+          <span class="button-text">View Portfolio</span>
+          <span class="button-hover" style="background-color: #3a8bd6;"></span>
+        </span>
+      </a>
+      <a href="https://docs.google.com/document/d/11cdGgpN98iWiHf_4GdCSHYmee92g2E9Fg26iyjBeihY/edit?usp=drivesdk" target="_blank" class="cta-button accent" data-aos="fade-up" data-aos-delay="100" style="background-color: #ff4ba0; color: white;">
+        <span class="button-content">
+          <i class="fas fa-file-alt button-icon"></i>
+          <span class="button-text">Forensic Reports</span>
+          <span class="button-hover" style="background-color: #e03a8f;"></span>
+        </span>
+      </a>
+      <a href="/contact" class="cta-button secondary" data-aos="fade-left" data-aos-delay="100" style="background-color: #ffd700; color: #121212;">
+        <span class="button-content">
+          <i class="fas fa-paper-plane button-icon"></i>
+          <span class="button-text">Discuss Investigation</span>
+          <span class="button-hover" style="background-color: #e6c200;"></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+.project-hero {
+  background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+}
+
+.project-image-container:hover img {
+  transform: scale(1.03);
+}
+
+.detail-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+}
+
+.gallery-item {
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4) !important;
+}
+
+.process-step {
+  transition: transform 0.3s ease;
+}
+.process-step:hover {
+  transform: translateX(10px);
+}
+.process-step:hover div:last-child {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3) !important;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border: none;
+}
+
+.cta-button .button-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cta-button .button-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.cta-button:hover .button-hover {
+  transform: scaleY(1);
+}
+
+.cta-button .button-icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .button-icon {
+  transform: translateX(3px);
+}
+
+.btn.outline {
+  transition: all 0.3s ease;
+}
+.btn.outline:hover {
+  background-color: #4da6ff;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(77, 166, 255, 0.3);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add hover effects to project title
+  document.querySelector('.name-highlight').addEventListener('mouseenter', function() {
+    this.querySelector('.hover-effect').style.transform = 'scaleX(1)';
+  });
+  document.querySelector('.name-highlight').addEventListener('mouseleave', function() {
+    this.querySelector('.hover-effect').style.transform = 'scaleX(1)';
+  });
+  
+  // Add hover effects to all cards
+  document.querySelectorAll('.detail-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-5px)';
+    });
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'none';
+    });
+  });
+  
+  // Add hover effects to gallery item
+  document.querySelector('.gallery-item').addEventListener('mouseenter', function() {
+    this.style.transform = 'scale(1.02)';
+  });
+  document.querySelector('.gallery-item').addEventListener('mouseleave', function() {
+    this.style.transform = 'none';
+  });
+  
+  // Add hover effects to process steps
+  document.querySelectorAll('.process-step').forEach(step => {
+    step.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateX(10px)';
+    });
+    step.addEventListener('mouseleave', function() {
+      this.style.transform = 'none';
+    });
+  });
+  
+  // Add hover effects to CTA buttons
+  document.querySelectorAll('.cta-button').forEach(button => {
+    button.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-3px)';
+    });
+    button.addEventListener('mouseleave', function() {
+      this.style.transform = 'none';
+    });
+  });
+});
+</script>
+{% endblock %}
