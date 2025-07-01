@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Core Flask Dependencies
 Flask==2.3.2
 Jinja2==3.1.3
@@ -12,19 +11,4 @@ Flask-Talisman==1.0.0  # Untuk HTTPS/security headers
 
 # Optional (Jika dibutuhkan)
 Flask-Caching==2.1.0  # Untuk caching
-=======
-# Core Flask Dependencies
-Flask==2.3.2
-Jinja2==3.1.3
-Werkzeug==2.3.7
-itsdangerous==2.1.2
-click==8.1.7
-
-# Development & Security
-python-dotenv==1.0.0
-Flask-Talisman==1.0.0  # Untuk HTTPS/security headers
-
-# Optional (Jika dibutuhkan)
-Flask-Caching==2.1.0  # Untuk caching
->>>>>>> 1bc5452 (update all file)
 Flask-Compress==1.14  # Untuk kompresi
