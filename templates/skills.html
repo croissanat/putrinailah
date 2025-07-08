@@ -9,11 +9,13 @@
   <div class="bg-shape shape-2"></div>
   
   <div class="skills-container">
-    <h2 class="skills-title" data-aos="fade-down">
-      <span class="text-primary">Technical &</span> 
-      <span class="text-accent">Soft Skills</span>
-      <span class="title-underline"></span>
-    </h2>
+    <div class="skills-title-container" data-aos="fade-down">
+      <h2 class="skills-title">
+        <span class="text-primary">Technical &</span> 
+        <span class="text-accent">Soft Skills</span>
+        <span class="title-underline"></span>
+      </h2>
+    </div>
     <p class="skills-description" data-aos="fade-down" data-aos-delay="100">
       My diverse skill set combines technical cybersecurity expertise with essential soft skills for comprehensive digital protection.
     </p>
@@ -275,14 +277,15 @@
   z-index: 2;
 }
 
+.skills-title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .skills-title {
   font-size: 2.8rem;
-  margin-bottom: 20px;
-  text-align: center;
-  position: relative;
   display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
 }
 
 .title-underline {
