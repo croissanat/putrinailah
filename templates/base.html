@@ -24,24 +24,32 @@
     :root {
       --bg: #ffffe0;
       --text: #333;
-      --primary: #ffd700;
+      --primary: #ff6b6b;
       --pink: #ff4ba0;
-      --yellow: #ffe46b;
+      --yellow: #ffe46b; /* Yellow color */
       --card-bg: #ffffcc;
-      --section-bg: linear-gradient(135deg, #fffacd 0%, #ffffcc 100%);
+      --section-bg: #ffffe0;
       --accent: #ff6f61;
-      --header-bg: linear-gradient(135deg, #fff0f5 0%, #e6f9ff 100%);
+      --header-bg: #ffffe0;
+      --border: rgba(0,0,0,0.1);
     }
 
     .dark-mode {
       --bg: #1a1a2e;
       --text: #f1f1f1;
-      --primary: #4da6ff;
-      --pink: #ff7eb9;
-      --yellow: #ffec8b;
+      --primary: #ff8787;
+      --pink: #ff4ba0;
+      --yellow: #ffe46b; /* Keep yellow in dark mode */
       --card-bg: #16213e;
-      --section-bg: linear-gradient(135deg, #0f0c29 0%, #1a1a2e 100%);
-      --header-bg: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      --section-bg: #1a1a2e;
+      --header-bg: #1a1a2e;
+      --border: rgba(255,255,255,0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -52,27 +60,20 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      line-height: 1.6;
     }
 
     .header {
       background: var(--header-bg);
-      padding: 20px 5%;
+      padding: 1.5rem 5%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
       z-index: 999;
-      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-    }
-
-    .header.scrolled {
-      backdrop-filter: blur(10px);
-      background: rgba(255, 255, 255, 0.8);
-    }
-
-    .dark-mode .header.scrolled {
-      background: rgba(26, 26, 46, 0.8);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-bottom: 1px solid var(--border);
     }
 
     .logo {
@@ -91,23 +92,29 @@
       height: 8px;
       background: var(--yellow);
       z-index: -1;
+      opacity: 0.7;
     }
 
     nav ul {
       display: flex;
       list-style: none;
-      gap: 25px;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
     }
 
-    nav ul li a {
-      color: var(--text);
+    /* Header navigation - YELLOW text */
+    .header nav ul li a {
+      color: var(--yellow); /* Yellow text */
       text-decoration: none;
       font-weight: 600;
-      padding: 5px 0;
+      padding: 0.5rem 0;
       position: relative;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
     }
 
-    nav ul li a::after {
+    .header nav ul li a::after {
       content: '';
       position: absolute;
       width: 0;
@@ -118,19 +125,19 @@
       transition: width 0.3s;
     }
 
-    nav ul li a:hover,
-    nav ul li a.active {
-      color: var(--primary);
+    .header nav ul li a:hover,
+    .header nav ul li a.active {
+      color: var(--primary); /* Pink when hover/active */
     }
 
-    nav ul li a:hover::after,
-    nav ul li a.active::after {
+    .header nav ul li a:hover::after,
+    .header nav ul li a.active::after {
       width: 100%;
     }
 
     .theme-switch {
       cursor: pointer;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: var(--text);
       background: rgba(255,255,255,0.2);
       width: 40px;
@@ -139,57 +146,70 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: 0.3s ease;
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
     }
 
     .theme-switch:hover {
       transform: rotate(30deg) scale(1.1);
       color: var(--primary);
+      background: rgba(255,255,255,0.3);
     }
 
     main {
       flex: 1;
+      padding: 2rem 5%;
+      background-color: var(--bg);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
     }
 
     footer {
       background: var(--bg);
       color: var(--text);
-      padding: 60px 5%;
-      margin-top: 80px;
-      border-top: 1px solid rgba(0,0,0,0.1);
+      padding: 3rem 5%;
+      margin-top: 3rem;
+      border-top: 1px solid var(--border);
     }
 
     .footer-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
+      gap: 2rem;
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .footer-col h3 {
       color: var(--primary);
-      margin-bottom: 20px;
-      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
       position: relative;
+      display: inline-block;
     }
 
     .footer-col h3::after {
       content: '';
       position: absolute;
-      bottom: 5px;
+      bottom: -5px;
       left: 0;
-      width: 100%;
-      height: 5px;
+      width: 40px;
+      height: 3px;
       background: var(--yellow);
-      z-index: -1;
     }
 
+    /* Footer navigation - keeps original style */
     .footer-col p, .footer-col a {
       color: var(--text);
       opacity: 0.8;
       transition: 0.3s ease;
       line-height: 1.8;
+      margin-bottom: 0.5rem;
+      display: block;
     }
 
     .footer-col a:hover {
@@ -199,8 +219,8 @@
 
     .social-links {
       display: flex;
-      gap: 15px;
-      margin-top: 20px;
+      gap: 1rem;
+      margin-top: 1.5rem;
     }
 
     .social-links a {
@@ -212,33 +232,62 @@
       background: rgba(255,255,255,0.1);
       border-radius: 50%;
       color: var(--text);
-      transition: 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .social-links a:hover {
       background: var(--primary);
-      color: #333;
+      color: white;
       transform: translateY(-3px);
     }
 
     .copyright {
       text-align: center;
-      margin-top: 60px;
+      margin-top: 3rem;
       opacity: 0.7;
-      padding-top: 20px;
-      border-top: 1px solid rgba(0,0,0,0.1);
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Certifications Page Specific Styles */
+    .certifications-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .certifications-container h1 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      color: var(--text);
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+    
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
     }
 
     @media (max-width: 768px) {
       .header {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        gap: 1rem;
+        padding: 1rem;
       }
 
       nav ul {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -263,7 +312,19 @@
   </header>
 
   <main>
-    {% block content %}{% endblock %}
+    <div class="container">
+      {% block content %}
+        <!-- Certifications Page Content -->
+        <div class="certifications-container">
+          <h1>My Certifications</h1>
+          <p class="subtitle">Professional certifications and courses that validate my technical expertise</p>
+          
+          <div class="certifications-grid">
+            <!-- Certifications will be displayed here -->
+          </div>
+        </div>
+      {% endblock %}
+    </div>
   </main>
 
   <footer>
@@ -279,30 +340,18 @@
       </div>
       <div class="footer-col">
         <h3>Navigation</h3>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/skills">Skills</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/certifications">Certifications</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>More</h3>
-        <ul>
-          <li><a href="/organizations">Organizations</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/privacy">Privacy Policy</a></li>
-          <li><a href="/terms">Terms of Service</a></li>
-        </ul>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/certifications">Certifications</a>
+        <a href="/organizations">Organizations</a>
+        <a href="/contact">Contact</a>
       </div>
       <div class="footer-col">
         <h3>Contact</h3>
-        <p><a href="mailto:nailah.putri@president.ac.id">nailah.putri@president.ac.id</a></p>
+        <a href="mailto:nailahseputri@gmail.com">nailahseputri@gmail.com</a>
       </div>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2025 Nailah Septiani Putri. All rights reserved.</p>
     </div>
   </footer>
 
@@ -339,10 +388,10 @@
 
       const header = document.getElementById('header');
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-          header.classList.add('scrolled');
+        if (window.scrollY > 20) {
+          header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
         } else {
-          header.classList.remove('scrolled');
+          header.style.boxShadow = 'none';
         }
       });
     });
