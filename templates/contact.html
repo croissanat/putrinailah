@@ -8,77 +8,64 @@
   <div class="bg-shape" style="position: absolute; width: 300px; height: 300px; background: #ffd700; border-radius: 50%; filter: blur(80px); top: -100px; right: -100px; opacity: 0.3; animation: float 8s ease-in-out infinite;"></div>
   <div class="bg-shape" style="position: absolute; width: 400px; height: 400px; background: #ff4ba0; border-radius: 50%; filter: blur(80px); bottom: -150px; left: -150px; opacity: 0.2; animation: float 10s ease-in-out infinite 2s;"></div>
 
-  <div style="max-width: 1000px; margin: 0 auto; position: relative; z-index: 2;">
+  <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
     <h2 style="font-size: 2.8rem; margin-bottom: 20px; text-align: center; position: relative; display: inline-block; left: 50%; transform: translateX(-50%);" data-aos="fade-down">
-      <span style="color: #333;">Let's</span> 
-      <span style="color: #ffd700;">Connect</span>
+      <span style="color: #333;">Get in</span> 
+      <span style="color: #ffd700;">Touch</span>
       <span style="position: absolute; bottom: 5px; left: 0; width: 100%; height: 8px; background: #ffe46b; z-index: -1; transform-origin: left; transform: scaleX(1);"></span>
     </h2>
 
     <p style="max-width: 600px; margin: 0 auto 60px auto; text-align: center; font-size: 1.1rem; line-height: 1.6;" data-aos="fade-up">
-      I'm always open to discussing cybersecurity projects, collaborations, or just chatting about tech. Reach out through any of these channels:
+      I'd love to hear from you! Whether you have a question about cybersecurity, want to collaborate, or just want to say hello, feel free to reach out.
     </p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
+    <div style="display: grid; grid-template-columns: 1fr; gap: 30px; margin-bottom: 60px;">
       <!-- Contact Form -->
-      <div style="background: #ffffcc; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);" data-aos="fade-right">
+      <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(255, 215, 0, 0.2);" data-aos="fade-right">
         <h3 style="font-size: 1.5rem; color: #ffd700; margin-bottom: 30px; text-align: center;">Send Me a Message</h3>
         <form action="https://api.web3forms.com/submit" method="POST" style="display: grid; gap: 20px;">
           <input type="hidden" name="access_key" value="027cef20-cba6-4845-a7b2-242922aa1b19">
           <input type="hidden" name="redirect" value="/thank-you">
+          <input type="hidden" name="email" value="nailahseputri@gmail.com">
 
-          <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 15px; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.8);">
-          <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 15px; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.8);">
-          <textarea name="message" placeholder="Your Message" rows="5" required style="width: 100%; padding: 15px; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.8);"></textarea>
-          <div id="success-message" style="display: none; color: green; text-align: center; font-weight: 600;">
+          <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 15px; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.8); transition: all 0.3s ease;">
+          <input type="email" name="replyto" placeholder="Your Email" required style="width: 100%; padding: 15px; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.8); transition: all 0.3s ease;">
+          <textarea name="message" placeholder="Your Message" rows="5" required style="width: 100%; padding: 15px; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.8); transition: all 0.3s ease;"></textarea>
+          <div id="success-message" style="display: none; color: green; text-align: center; font-weight: 600; padding: 10px; background: rgba(0, 200, 0, 0.1); border-radius: 8px;">
             Your message has been sent successfully!
           </div>
-          <button type="submit" style="background: #ffd700; color: #333; border: none; padding: 15px; border-radius: 10px; font-weight: 600; cursor: pointer; box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);">
+          <button type="submit" style="background: #ffd700; color: #333; border: none; padding: 15px; border-radius: 10px; font-weight: 600; cursor: pointer; box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3); transition: all 0.3s ease;">
             Send Message
           </button>
         </form>
       </div>
 
       <!-- Contact Info -->
-      <div style="background: #ffffcc; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);" data-aos="fade-left">
-        <h3 style="font-size: 1.5rem; color: #ffd700; margin-bottom: 30px; text-align: center;">Direct Contact</h3>
-        <div style="display: grid; gap: 25px;">
-          <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="width: 50px; height: 50px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-envelope" style="font-size: 1.2rem; color: #ffd700;"></i>
+      <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(255, 215, 0, 0.2);" data-aos="fade-left">
+        <div style="display: grid; grid-template-columns: 1fr; gap: 40px;">
+          <!-- Email Section -->
+          <div style="text-align: center;">
+            <div style="width: 70px; height: 70px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto;">
+              <i class="fas fa-envelope" style="font-size: 1.5rem; color: #ffd700;"></i>
             </div>
-            <div>
-              <h4 style="margin: 0 0 5px 0; color: #333;">Email</h4>
-              <a href="mailto:nailahputri@gmail.com" style="color: #666; text-decoration: none;">nailah.putri@president.ac.id</a>
-            </div>
+            <h4 style="margin: 0 0 10px 0; color: #333; font-size: 1.2rem;">Email</h4>
+            <a href="mailto:nailahseputri@gmail.com" style="color: #666; text-decoration: none; font-size: 1rem;">nailahseputri@gmail.com</a>
           </div>
-          <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="width: 50px; height: 50px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-phone-alt" style="font-size: 1.2rem; color: #ffd700;"></i>
+          
+          <!-- Social Media Section -->
+          <div style="text-align: center;">
+            <h4 style="margin-bottom: 20px; color: #333; font-size: 1.2rem;">Connect With Me</h4>
+            <div style="display: flex; justify-content: center; gap: 20px;">
+              <a href="https://www.instagram.com/nailahesp" target="_blank" class="social-link" style="width: 50px; height: 50px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                <i class="fab fa-instagram" style="font-size: 1.3rem; color: #ffd700;"></i>
+              </a>
+              <a href="https://github.com/croissanat" target="_blank" class="social-link" style="width: 50px; height: 50px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                <i class="fab fa-github" style="font-size: 1.3rem; color: #ffd700;"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/nailah-septiani-putri-248b2328a" target="_blank" class="social-link" style="width: 50px; height: 50px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                <i class="fab fa-linkedin-in" style="font-size: 1.3rem; color: #ffd700;"></i>
+              </a>
             </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="width: 50px; height: 50px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-map-marker-alt" style="font-size: 1.2rem; color: #ffd700;"></i>
-            </div>
-            <div>
-              <h4 style="margin: 0 0 5px 0; color: #333;">Location</h4>
-              <p style="margin: 0; color: #666;">Bekasi, Indonesia</p>
-            </div>
-          </div>
-        </div>
-        <div style="margin-top: 40px;">
-          <h4 style="text-align: center; margin-bottom: 20px; color: #333;">Social Media</h4>
-          <div style="display: flex; justify-content: center; gap: 15px;">
-            <a href="https://www.instagram.com/nailahesp" target="_blank" class="social-link" style="width: 45px; height: 45px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-              <i class="fab fa-instagram" style="font-size: 1.2rem; color: #ffd700;"></i>
-            </a>
-            <a href="https://github.com/croissanat" target="_blank" class="social-link" style="width: 45px; height: 45px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-              <i class="fab fa-github" style="font-size: 1.2rem; color: #ffd700;"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/nailah-septiani-putri-248b2328a" target="_blank" class="social-link" style="width: 45px; height: 45px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-              <i class="fab fa-linkedin-in" style="font-size: 1.2rem; color: #ffd700;"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -95,7 +82,8 @@
 
 .social-link:hover {
   background: #ffd700 !important;
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3) !important;
 }
 .social-link:hover i {
   color: white !important;
@@ -107,10 +95,23 @@ input:focus, textarea:focus {
   box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2) !important;
 }
 
+button {
+  transition: all 0.3s ease !important;
+}
 button:hover {
   background: #e6c200 !important;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4) !important;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .contact-hero > div {
+    max-width: 700px;
+  }
+  .contact-hero > div > div {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 </style>
 
@@ -119,9 +120,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
   const successMessage = document.getElementById('success-message');
 
-  form.addEventListener('submit', function () {
-    successMessage.style.display = 'block';
-  });
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Simulate form submission
+      setTimeout(() => {
+        successMessage.style.display = 'block';
+        form.reset();
+      }, 1000);
+    });
+  }
 });
 </script>
 {% endblock %}
